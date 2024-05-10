@@ -68,7 +68,7 @@ Step 5: Setup GitOps pipeline using ArgoCD
 1. user: "admin"
 2. For password use this command
    I) kubectl edit secret argocd-initial-admin-secret -n argocd
-   II) Copy the password and decode it using this: 'echo "enterpassword" | bash64 --decode'
+   II) Copy the password and decode it using this: 'echo "enterpassword" | base64 --decode'
 ```
 
 
@@ -79,15 +79,15 @@ Step 5: Setup GitOps pipeline using ArgoCD
 
 After logging in, click the + New App button as shown below:
 
-<img src = "Architecture-3-tier.png">
+<img src = "assects/setup-1.png">
 
 2) Give your app the name guestbook, use the project default, and leave the sync policy as Manual:
 
-<img src = "Architecture-3-tier.png">
+<img src = "assects/setup-2.png">
 
 3) Connect the https://github.com/priyanshu3103/Deploy-application-using-GitOps.gitrepo to Argo CD by setting repository url to the github repo url, leave revision as HEAD, and set the path to guestbook and For Destination, set cluster URL to https://kubernetes.default.svc (or in-cluster for cluster name) and namespace to default:
 
-<img src = "Architecture-3-tier.png">
+<img src = "assects/setup-3.png">
 
 4) Then click on create for last click on "Sync" and the synchronized.
 
