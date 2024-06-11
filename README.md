@@ -1,7 +1,7 @@
 
 # Deploying a Two-Tier Application on Kubernetes
-
-<img src = "Architecture-3-tier.png">
+<img src = "2-tier-diagram.png">
+<img src = "2-tier-5.png">
 
 Deploying a two-tier application on Kubernetes involves setting up two interconnected components, typically a front-end and a back-end, in a Kubernetes cluster. Here is a comprehensive description of the process:
 
